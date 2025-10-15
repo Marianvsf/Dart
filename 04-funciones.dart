@@ -2,6 +2,8 @@ void main() {
   print(greetEveryone());
 
   print('Suma: ${addTwoNumbers(10, 20)}');
+
+  print(greetPerson(name: 'Marian!', message: 'Hi'));
 }
 
 String greetEveryone() {
@@ -25,4 +27,8 @@ int addTwoNumbersOptional(int a, [int? b]) {
 
 int addTwoNumbersOptional2(int a, [int b = 0]) {
   return a + b;
+}
+
+String greetPerson({required String? name, String message = 'Haola, '}) {
+  return '$message Marian';
 }
