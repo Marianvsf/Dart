@@ -16,13 +16,14 @@ class Square {
   double get area {
     return _side * _side;
   }
-set side( double value ) {
+  set side( double value ) {
   print('setting new value $value');
-  if (value < 0) throw 'must be mayor a cero';
+  if (value < 0) throw 'Value must be > 0';
 
   _side = value;
 }
   double calculateArea() {
     return _side * _side;
+    // Guión bajo indica que es una propiedad privada.
   }
 }
