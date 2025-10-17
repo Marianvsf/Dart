@@ -11,7 +11,8 @@ class Square {
   double _side;
 
   Square({required double side});
-    : _side = side;
+    : assert(side >= 0, 'side must be >='),
+    _side = side;
 
   double get area {
     return _side * _side;
